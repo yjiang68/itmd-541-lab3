@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="demo">
+    <div id="desc">
+    <p1>ITMD 541 - Lab3 - Yanling Jiang</p1>
+    <h1>Tip Calculator</h1><br>
+    </div>
+    <form id="content">
+      <label for="billtotal" class="item1">Bill Total:</label>
+      <input type="text" id="billtotal" name="billtotal" onchange="checkInput()" class="item2">
+      <label for="tip" class="item1">Tip:</label>
+      <input type="range" id="tip" name="tip" min="0" max="100" class="item2">
+      <label for="tippercentage" class="item1">Tip Percentage:</label>
+      <input type="text" id="tippercentage" name="tippercentage" disabled  class="item2">
+      <label for="tipamount" class="item1">Tip Amount:</label>
+      <input type="text" id="tipamount" name="tipamount" disabled class="item2">
+      <label for="totalbillwithtip" class="item1">Total Bill with Tip:</label>
+      <input type="text" id="totalbillwithtip" name="totalbillwithtip" disabled class="item2">
+    </form>
+  </div>
+  <script src="myscript.js"></script>
+</body>
+
+</html>

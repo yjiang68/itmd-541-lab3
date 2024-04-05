@@ -1,0 +1,73 @@
+
+
+  /* */
+ 
+ #demo {
+	background-color:lightblue;
+	width: 70%;
+	margin:5% auto;
+	text-align: center;
+	padding:5% 0; 
+  }
+
+
+#content{
+	/* background-color:lightgreen; */
+	width: 80%;
+	margin:auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	justify-content: center; 
+    align-content: center;
+	justify-items: stretch;
+	/* align-items: stretch; */
+	grid-gap:5% 5%; 
+
+}
+
+
+#content .item1{
+	/* background-color: red; */
+	grid-column: 1 / 2;
+	text-align: right;
+	/* justify-self: end; */
+	white-space: nowrap;
+	overflow:clip;
+}
+#content .item2{
+	/* background-color: yellow; */
+	grid-column: 2 / 4;
+	text-align: right;
+	
+}
+
+input[type="text"] {
+    border: 1px solid black;
+  }
+
+
+  html {  
+	font-size: 16px; /* 基础字体大小 */  
+  }  
+	
+  body {  
+	font-size: 1rem; /* 等于16px */  
+  }  
+	
+  h1 {  
+	font-size: 2rem; /* 等于32px */  
+  }  
+	
+  /* 在不同的屏幕大小下改变根元素的字体大小 */  
+  @media (min-width: 600px) {  
+	html {  
+	  font-size: 18px; /* 当屏幕宽度至少为600px时，基础字体大小变为18px */  
+	}  
+  }  
+	
+  @media (min-width: 900px) {  
+	html {  
+	  font-size: 20px; /* 当屏幕宽度至少为900px时，基础字体大小变为20px */  
+	}  
+  }
